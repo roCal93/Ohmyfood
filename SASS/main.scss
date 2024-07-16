@@ -1,6 +1,14 @@
 @charset 'utf-8';
 
-@import "./base/font";
-@import "./layouts/header";
-@import "./utils/variables";
-@import "./pages/home";
+@import
+'utils/variables';
+
+@import
+'base/font';
+
+@import 
+'layouts/header',
+'layouts/main';
+
+@import 
+'pages/home';
