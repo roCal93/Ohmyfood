@@ -12,4 +12,82 @@
   font-style: normal;
 }
 
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 63px;
+}
+.header__header--logo {
+  width: 162px;
+}
+
+.header-location {
+  background-color: #eaeaea;
+  gap: 17px;
+  height: 50px;
+  box-shadow: inset 0px 4px 4px -3px rgba(40, 40, 40, 0.25);
+}
+.header-location .header-location__form {
+  width: 109px;
+  border: none;
+  background-color: #eaeaea;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.header-location__form:focus {
+  outline: none;
+}
+
+.header-location__form::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+/*Chrome cross form*/
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.explore {
+  padding: 20px 100px;
+}
+
+html, body, header, main, p, h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  max-width: 480px;
+}
+
+main {
+  background-color: #f6f6f6;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=main.css.map */
