@@ -1,17 +1,5 @@
 /**** Police logo et titre ****/
-.shrikhand-regular {
-  font-family: "Shrikhand", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 /**** Police texte ****/
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -22,14 +10,13 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 24px;
-  margin: 15px 45px;
+  margin: 0px 45px;
 }
 
 h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   font-size: 18px;
-  margin: 10px 0px;
 }
 
 .header {
@@ -79,24 +66,47 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 .explore {
-  padding: 20px;
-  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   box-shadow: inset 0px 6px 4px -3px rgba(40, 40, 40, 0.25);
+  padding: 40px 0px;
+  gap: 10px;
 }
 
 .main-button {
-  width: 65%;
+  width: 58%;
   height: 50px;
-  background: linear-gradient(180deg, #FF79DA -11.44%, #9356DC 123.93%);
+  background: linear-gradient(180deg, #ff7ad9, #9256dc);
   border-radius: 25px;
   border: none;
   color: #FFFFFF;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   padding: 0;
   margin: 20px 0px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.main-button:hover::after {
+  opacity: 1;
+}
+.main-button::after {
+  content: "";
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, #ff94e0, #a06be0);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 300ms;
 }
 
-html, body, header, main, p, h1, h3 {
+html, body, header, main, p, h1, h3, h4 {
   margin: 0;
   padding: 0;
 }

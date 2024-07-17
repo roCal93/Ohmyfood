@@ -1,6 +1,22 @@
+
+
+// font title and logo
+$font-title-logo: "Shrikhand", serif;
+
+// font text
+$font-text: "Roboto", sans-serif;
+
 // home location background-color
 $location-color :#eaeaea;
 
-// main-button backround
-$main-button-color: linear-gradient(180deg,#FF79DA -11.44%,#9356DC 123.93%);
+// main-button backround primary
+$main-button-color: linear-gradient(180deg,#ff7ad9, #9256dc);
 
+// main-button backround secondary
+$main-button-color2: linear-gradient(180deg,lighten(#ff7ad9,5), lighten(#9256dc,5));
+
+// main-button text color
+$main-button-txtcolor: #FFFFFF;
+
+// main-button shadow
+$main-button-shadow: 0px 4px 10px 0px #00000040;
