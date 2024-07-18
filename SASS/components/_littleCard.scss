@@ -1,0 +1,13 @@
+
+// little card in howItWork
+.little-card {
+    height: 72px;
+    background-color: $littleCard-background-clr;
+    border-radius: 20px;
+    box-shadow: $home-shadow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    position: relative;
+}

@@ -1,4 +1,4 @@
-html, body, header, main, p, h1, h3, h4 {
+html, body, header, main, p, h1, h4 {
     margin: 0;
     padding: 0;
 }
@@ -11,7 +11,7 @@ html, body, header, main, p, h1, h3, h4 {
 
 
 main {
-    background-color: #f6f6f6;
+    background-color: $main-background-clr;
     text-align: center;
     display: flex;
     flex-direction: column;

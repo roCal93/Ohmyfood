@@ -7,16 +7,26 @@ $font-title-logo: "Shrikhand", serif;
 $font-text: "Roboto", sans-serif;
 
 // home location background-color
-$location-color :#eaeaea;
+$location-color: #eaeaea;
 
-// main-button backround primary
-$main-button-color: linear-gradient(180deg,#ff7ad9, #9256dc);
+//home main background
+$main-background-clr: #f6f6f6;
 
-// main-button backround secondary
-$main-button-color2: linear-gradient(180deg,lighten(#ff7ad9,5), lighten(#9256dc,5));
+//Little card background color
+
+$littleCard-background-clr: #f6f6f6;
+
+// main how it work background
+$howItWork-background-clr: #FFFFFF;
+
+//Primary
+$primary:  #9356DC;
+
+//Secondary
+$secondary: #FF79DA;
 
 // main-button text color
 $main-button-txtcolor: #FFFFFF;
 
-// main-button shadow
-$main-button-shadow: 0px 4px 10px 0px #00000040;
+// main-button shadow & little card
+$home-shadow: 0px 4px 10px 0px #00000040;

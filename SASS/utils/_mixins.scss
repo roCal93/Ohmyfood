@@ -1,0 +1,14 @@
+
+// main button background
+@mixin main-button-background {
+    
+    background: linear-gradient(356deg, $primary, $secondary);
+
+}
+
+//main button background hover
+@mixin main-button-background-hover {
+
+   background: linear-gradient(356deg, lighten($primary,5), lighten($secondary,5));
+
+}

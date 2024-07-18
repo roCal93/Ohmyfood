@@ -1,13 +1,16 @@
 
 // main button
 .main-button {
+    @include main-button-background;
     width: 58%;
     height: 50px;
-    background: $main-button-color;
+    font-family: $font-text;
+    font-weight: 400;
+    font-size: 16px;
     border-radius: 25px;
     border: none;
     color: $main-button-txtcolor;
-    box-shadow: $main-button-shadow;
+    box-shadow: $home-shadow;
     padding: 0;
     margin: 20px 0px;
     cursor: pointer;
@@ -21,6 +24,7 @@
     }
 
     &::after {
+        @include main-button-background-hover;
         content: "";
         border-radius: 25px;
         position: absolute;
@@ -28,7 +32,6 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background: $main-button-color2;
         opacity: 0;
         z-index: -1;
         transition: opacity 300ms;
