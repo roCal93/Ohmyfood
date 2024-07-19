@@ -1,10 +1,9 @@
-
 // little card in howItWork
-.little-card {
+.littleCard {
     height: 72px;
-    background-color: $littleCard-background-clr;
+    background-color: $littleCardBackgroundClr;
     border-radius: 20px;
-    box-shadow: $home-shadow;
+    box-shadow: $homeShadow;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,22 +1,16 @@
 @charset 'utf-8';
 
-@import
-'utils/variables',
+@import 'utils/variables',
 'utils/mixins';
 
-@import
-'base/font';
-
-@import 
+@import 'layouts/global',
 'layouts/header',
-'layouts/main';
+'layouts/homeMain';
 
 
-@import
-'components/buttons',
+@import 'components/buttons',
 'components/littleCard',
 'components/numberList';
 
 
-@import 
-'pages/home';
+@import 'pages/home';

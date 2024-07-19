@@ -5,21 +5,21 @@
     height: 63px;
     width: 100%;
 
-    &__header--logo {
-      height: 28px;
+    &__headerLogo {
+        height: 28px;
     }
 }
 
-.header-location {
-    background-color: $location-color;
+.headerForm {
+    background-color: $formColor;
     gap: 17px;
     height: 50px;
     box-shadow: inset 0px 4px 4px -3px rgba(40, 40, 40, 0.25);
 
-    .header-location__form {
+    .headerFormInput {
         width: 109px;
         border: none;
-        background-color: $location-color;
+        background-color: $formColor;
         padding: 0;
         font-size: 16px;
         font-weight: 500;
@@ -27,11 +27,11 @@
     }
 }
 
-.header-location__form:focus {
+.headerFormInput:focus {
     outline: none;
 }
 
-.header-location__form::placeholder {
+.headerFormInput::placeholder {
     font-size: 16px;
     font-weight: 400;
     font-family: "Roboto", sans-serif;

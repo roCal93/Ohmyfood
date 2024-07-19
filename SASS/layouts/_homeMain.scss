@@ -5,11 +5,11 @@
    justify-content: space-around;
    box-shadow: inset 0px 6px 4px -3px rgba(40, 40, 40, 0.25);
    padding: 40px 0px;
-   gap:10px
+   gap: 10px
 }
 
 .howItWork {
-   background-color: $howItWork-background-clr;
+   background-color: $howItWorkBackgroundClr;
    padding: 20px;
    display: flex;
    flex-direction: column;

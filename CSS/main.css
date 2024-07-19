@@ -1,3 +1,14 @@
+html,
+body,
+header,
+main,
+p,
+h1,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -25,6 +36,13 @@ h4 {
   font-size: 18px;
 }
 
+main {
+  background-color: #f6f6f6;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -32,17 +50,17 @@ h4 {
   height: 63px;
   width: 100%;
 }
-.header__header--logo {
+.header__headerLogo {
   height: 28px;
 }
 
-.header-location {
+.headerForm {
   background-color: #eaeaea;
   gap: 17px;
   height: 50px;
   box-shadow: inset 0px 4px 4px -3px rgba(40, 40, 40, 0.25);
 }
-.header-location .header-location__form {
+.headerForm .headerFormInput {
   width: 109px;
   border: none;
   background-color: #eaeaea;
@@ -52,11 +70,11 @@ h4 {
   font-family: "Roboto", sans-serif;
 }
 
-.header-location__form:focus {
+.headerFormInput:focus {
   outline: none;
 }
 
-.header-location__form::placeholder {
+.headerFormInput::placeholder {
   font-size: 16px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
@@ -90,7 +108,7 @@ input[type=search]::-webkit-search-results-decoration {
   gap: 30px;
 }
 
-.main-button {
+.mainButton {
   background: linear-gradient(356deg, #9356DC, #FF79DA);
   width: 58%;
   height: 50px;
@@ -107,10 +125,10 @@ input[type=search]::-webkit-search-results-decoration {
   position: relative;
   z-index: 1;
 }
-.main-button:hover::after {
+.mainButton:hover::after {
   opacity: 1;
 }
-.main-button::after {
+.mainButton::after {
   background: linear-gradient(356deg, #a16be0, #ff93e1);
   content: "";
   border-radius: 25px;
@@ -124,7 +142,7 @@ input[type=search]::-webkit-search-results-decoration {
   transition: opacity 300ms;
 }
 
-.little-card {
+.littleCard {
   height: 72px;
   background-color: #f6f6f6;
   border-radius: 20px;
@@ -136,7 +154,7 @@ input[type=search]::-webkit-search-results-decoration {
   position: relative;
 }
 
-.number-list {
+.numberList {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -152,22 +170,10 @@ input[type=search]::-webkit-search-results-decoration {
   left: -12px;
 }
 
-html, body, header, main, p, h1, h4 {
-  margin: 0;
-  padding: 0;
-}
-
-.main-container {
+.homeMainContainer {
   width: 100%;
   max-width: 480px;
   box-sizing: border-box;
-}
-
-main {
-  background-color: #f6f6f6;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 
 /*# sourceMappingURL=main.css.map */
