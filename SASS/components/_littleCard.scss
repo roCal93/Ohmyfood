@@ -5,8 +5,32 @@
     border-radius: 20px;
     box-shadow: $homeShadow;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-left: 12px;
     position: relative;
+    padding-left: 80px;
+}
+
+.fa-mobile-screen-button {
+    font-size: 19px;
+    position: absolute;
+    left: 40px;
+    top: 24px;
+    color: $iconPhoneList;
+}
+
+.fa-list-ul {
+    font-size: 18px;
+    position: absolute;
+    left: 40px;
+    top: 26px;
+    color: $iconPhoneList;
+}
+
+.fa-store{
+    font-size: 18px;
+    position: absolute;
+    left: 40px;
+    top: 25px;
+    color: $primary;
 }

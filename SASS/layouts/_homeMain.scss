@@ -10,9 +10,17 @@
 
 .howItWork {
    background-color: $howItWorkBackgroundClr;
-   padding: 20px;
+   padding: 50px 20px;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
    gap: 30px;
+}
+
+.homeRestaurants {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 18px;
+   padding: 50px 20px;
 }
