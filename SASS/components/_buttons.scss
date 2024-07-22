@@ -33,6 +33,7 @@
         left: 0;
         opacity: 0;
         z-index: -1;
+        box-shadow: $homeShadow;
         transition: opacity 300ms;
     }
 }

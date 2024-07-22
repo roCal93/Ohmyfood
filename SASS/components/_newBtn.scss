@@ -1,0 +1,17 @@
+.newBtn {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    width: 80px;
+    height: 29px;
+    font-family: $fontText;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 2px;
+    padding: 0;
+    color: $newBtnTxtClr;
+    background: $third;
+    border: 0;
+    box-shadow: $homeShadow;
+    cursor: pointer;
+}
