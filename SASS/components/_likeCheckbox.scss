@@ -1,0 +1,29 @@
+.likeCheckbox {
+  display: none;
+}
+
+.likeCheckbox + label {
+  position: absolute;
+  cursor: pointer;
+  top: 18px;
+  right: 22px;
+}
+
+.likeCheckbox + label:before {
+  content: "\f08a";
+  font-family: FontAwesome;
+  font-size: 25px;
+  padding: 2px;
+}
+
+.likeCheckbox:checked + label:before {
+  content: "\f004";
+  font-size: 25px;
+  background: linear-gradient(to bottom, $primary, $secondary);
+  background-clip: text;
+  color: transparent;
+}
+
+
+
+

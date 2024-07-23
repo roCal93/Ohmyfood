@@ -3,22 +3,21 @@
     width: 100%;
     background-color: $homeRestaurantBackground;
     border-radius: 15px;
-    box-shadow: $homeShadow;
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
 .homeImg {
-    height: 70%;
-    object-fit: cover;
+    height: 176px;
+    object-fit:cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    object-position: 0px -55px;
+    object-position: 0px -50px;
 }
 
 .homeImgStilU {
-    height: 70%;
+    height: 176px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -26,10 +25,11 @@
 }
 
 .cardContent{
-    height: 30%;
+    height: 75px;
     padding: 13px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .cardTxt {
@@ -42,5 +42,3 @@
         font-weight: 300;
     }
 }
-
-

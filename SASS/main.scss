@@ -5,7 +5,9 @@
 
 @import 'layouts/global',
 'layouts/header',
-'layouts/homeMain';
+'layouts/homeMain',
+'layouts/footer',
+'layouts/loader';
 
 
 @import 'components/buttons',
@@ -13,7 +15,7 @@
 'components/_restaurantCard',
 'components/numberList',
 'components/newBtn',
-'components/likeBtn';
+'components/likeCheckbox';
 
 
 @import 'pages/home';
