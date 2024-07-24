@@ -25,8 +25,17 @@
 
 <body>
     <div class="homeMainContainer">
-        <div class="demo ">
-            <div class="custom-loading-spinner"></div>
+        <div class="loaderContainer">
+            <div class="flippingLetters">
+                <div class="letter">o</div>
+                <div class="letter">h</div>
+                <div class="letter">m</div>
+                <div class="letter">y</div>
+                <div class="letter">f</div>
+                <div class="letter">o</div>
+                <div class="letter">o</div>
+                <div class="letter">d</div>
+            </div>
             <header>
                 <div class="header">
                     <img class="header__headerLogo" src="imgAndTextOhMyFood/img/logo/ohMyFood.png" alt="Logo Ohmyfood">
@@ -71,7 +80,7 @@
                     <h2>Restaurants</h2>
                     <a href="#">
                         <article class="restaurantCard">
-                            <button class="newBtn">Nouveau</button>
+                            <div class="newTag">Nouveau</div>
                             <img class="homeImg"
                                 src="imgAndTextOhMyFood/img/restaurants/jayWenningtonNY88TWmGwAUnsplash.jpg"
                                 alt="picture of a plate from Jay Wennington restaurant">
@@ -87,7 +96,7 @@
                     </a>
                     <a href="#">
                         <article class="restaurantCard">
-                            <button class="newBtn">Nouveau</button>
+                            <div class="newTag">Nouveau</div>
                             <img class="homeImgStilU"
                                 src="imgAndTextOhMyFood/img/restaurants/stilU2Lp8tXIcjwUnsplash.jpg"
                                 alt="picture of a plate from La note enchantée restaurant">
@@ -116,8 +125,9 @@
                             </div>
                         </article>
                     </a>
-                    <a href="#">
-                        <article class="restaurantCard">
+
+                    <article class="restaurantCard">
+                        <a href="#">
                             <img class="homeImg"
                                 src="imgAndTextOhMyFood/img/restaurants/louisHanselShotsoflouisQNBGVyOCY8QUnsplash.jpg"
                                 alt="picture of a plate from Le délice des sens restaurant">
@@ -126,11 +136,11 @@
                                     <h3>Le délice des sens</h3>
                                     <p>Folie-Méricourt</p>
                                 </div>
-                                <input type="checkbox" id="leDeliceDesSens" class="likeCheckbox">
-                                <label for="leDeliceDesSens"></label>
                             </div>
-                        </article>
-                    </a>
+                        </a>
+                        <input type="checkbox" id="leDeliceDesSens" class="likeCheckbox">
+                        <label for="leDeliceDesSens"></label>
+                    </article>
                 </section>
             </main>
             <footer>
@@ -144,7 +154,6 @@
             </footer>
         </div>
     </div>
-
 </body>
 
 </html>

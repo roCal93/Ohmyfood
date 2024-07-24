@@ -1,9 +1,11 @@
 footer{
+    width: 100%;
     background-color: $footerBackgroundClr;
     padding: 22px 25px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    box-sizing: border-box;
 }
 
 .titleFooter {

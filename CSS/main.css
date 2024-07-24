@@ -19,6 +19,7 @@ h2 {
   font-weight: 600;
   font-size: 24px;
   text-align: left;
+  margin: 0;
 }
 
 h3 {
@@ -49,6 +50,12 @@ ul {
   list-style-type: none;
   padding: 0px;
   margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .header {
@@ -114,7 +121,7 @@ input[type=search]::-webkit-search-results-decoration {
 
 .howItWork {
   background-color: #FFFFFF;
-  padding: 50px 20px;
+  padding: 50px 20px 70px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -126,16 +133,18 @@ input[type=search]::-webkit-search-results-decoration {
   flex-direction: column;
   justify-content: space-between;
   gap: 18px;
-  padding: 50px 17.5px;
+  padding: 50px 17.5px 70px 17.5px;
   box-sizing: border-box;
 }
 
 footer {
+  width: 100%;
   background-color: #353535;
   padding: 22px 25px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  box-sizing: border-box;
 }
 
 .titleFooter {
@@ -168,53 +177,88 @@ footer {
   font-size: 13px;
 }
 
-.demo {
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  text-align: justify;
-}
-
-.custom-loading-spinner {
-  cursor: progress;
-  position: absolute;
+.loaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
-.custom-loading-spinner::before {
+.loaderContainer::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 10001;
-  overflow: hidden;
-  background: #0b0b0b;
+  background: white;
   opacity: 0.6;
+  animation: displayNone 3000ms 5000ms both;
 }
 
-.custom-loading-spinner::after {
-  box-sizing: border-box;
+.flippingLetters {
   z-index: 10002;
-  content: "";
+  display: flex;
   position: absolute;
-  top: 20%;
-  left: 50%;
-  margin: -25px 0 0 -25px;
-  border: 3px solid #f3f3f3;
-  border-top: 3px solid #3498db;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: custom-loading 1s linear 5;
+  top: 15%;
+  animation: displayNone 3000ms 5000ms both;
 }
 
-@keyframes custom-loading {
-  0% {
-    transform: rotate(0deg);
+.letter {
+  color: #101010;
+  font-family: "Shrikhand", serif;
+  font-size: 50px;
+  font-weight: 100;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  animation: flip 3s 2;
+}
+
+.letter:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.letter:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.letter:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.letter:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.letter:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.letter:nth-child(6) {
+  animation-delay: 1s;
+}
+
+.letter:nth-child(7) {
+  animation-delay: 1.2s;
+}
+
+.letter:nth-child(8) {
+  animation-delay: 1.3s;
+}
+
+@keyframes flip {
+  0%, 100% {
+    transform: rotateX(0deg);
   }
+  50% {
+    transform: rotateX(180deg);
+  }
+}
+@keyframes displayNone {
   100% {
-    transform: rotate(360deg);
+    display: none;
+    opacity: 0;
   }
 }
 .mainButton {
@@ -294,7 +338,6 @@ footer {
   background-color: #FFFFFF;
   border-radius: 15px;
   display: flex;
-  flex-direction: column;
   position: relative;
 }
 
@@ -349,7 +392,7 @@ footer {
   left: -12px;
 }
 
-.newBtn {
+.newTag {
   position: absolute;
   top: 13px;
   right: 13px;
@@ -359,12 +402,12 @@ footer {
   font-size: 14px;
   font-weight: 500;
   border-radius: 2px;
-  padding: 0;
   color: #008766;
   background: #99E2D0;
-  border: 0;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .likeCheckbox {
