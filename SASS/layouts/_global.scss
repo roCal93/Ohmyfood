@@ -38,11 +38,16 @@ a {
   color: inherit;
 }
 
+header {
+  position: relative;
+}
+
 main {
   background-color: $mainBackgroundClr;
   text-align: center;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 ul {
