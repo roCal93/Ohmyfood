@@ -2,8 +2,7 @@ html,
 body,
 header,
 main,
-h1, h3, p,
-h4 {
+h1, h2, h3, h4, p {
   margin: 0;
   padding: 0;
 }
@@ -19,7 +18,6 @@ h2 {
   font-weight: 600;
   font-size: 24px;
   text-align: left;
-  margin: 0;
 }
 
 h3 {
@@ -206,12 +204,11 @@ footer {
 }
 
 .letter {
-  color: #101010;
+  color: #000000;
   font-family: "Shrikhand", serif;
   font-size: 50px;
   font-weight: 100;
   backface-visibility: hidden;
-  transform-style: preserve-3d;
   animation: flip 3s 2;
 }
 
@@ -248,7 +245,7 @@ footer {
 }
 
 @keyframes flip {
-  0%, 100% {
+  100% {
     transform: rotateX(0deg);
   }
   50% {
@@ -263,6 +260,9 @@ footer {
 }
 .mainButton {
   background: linear-gradient(356deg, #9356DC, #FF79DA);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 58%;
   height: 50px;
   font-family: "Roboto", sans-serif;
@@ -274,7 +274,6 @@ footer {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   padding: 0;
   margin: 20px 0px;
-  cursor: pointer;
   position: relative;
   z-index: 1;
 }
@@ -308,6 +307,11 @@ footer {
   padding-left: 80px;
 }
 
+.littleCard h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .fa-mobile-screen-button {
   font-size: 19px;
   position: absolute;
@@ -338,23 +342,26 @@ footer {
   background-color: #FFFFFF;
   border-radius: 15px;
   display: flex;
+  flex-direction: column;
   position: relative;
 }
 
 .homeImg {
+  width: 100%;
   height: 176px;
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  object-position: 0px -50px;
+  object-position: bottom;
 }
 
 .homeImgStilU {
+  width: 100%;
   height: 176px;
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  object-position: 0px -152px;
+  object-position: 50% 60%;
 }
 
 .cardContent {
@@ -362,7 +369,6 @@ footer {
   padding: 13px;
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 
 .cardTxt {
@@ -417,18 +423,19 @@ footer {
 .likeCheckbox + label {
   position: absolute;
   cursor: pointer;
-  top: 18px;
+  bottom: 30px;
   right: 22px;
 }
 
-.likeCheckbox + label:before {
+.likeCheckbox + label::before {
   content: "\f08a";
   font-family: FontAwesome;
   font-size: 25px;
   padding: 2px;
+  transition: 400ms ease;
 }
 
-.likeCheckbox:checked + label:before {
+.likeCheckbox:checked + label::before {
   content: "\f004";
   font-size: 25px;
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
@@ -437,6 +444,12 @@ footer {
 }
 
 .homeMainContainer {
+  width: 100%;
+  max-width: 480px;
+  box-sizing: border-box;
+}
+
+.menuMainConteneur {
   width: 100%;
   max-width: 480px;
   box-sizing: border-box;

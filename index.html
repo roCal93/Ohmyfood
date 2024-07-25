@@ -36,6 +36,7 @@
                 <div class="letter">o</div>
                 <div class="letter">d</div>
             </div>
+
             <header>
                 <div class="header">
                     <img class="header__headerLogo" src="imgAndTextOhMyFood/img/logo/ohMyFood.png" alt="Logo Ohmyfood">
@@ -50,7 +51,7 @@
                 <nav class="explore">
                     <h2>Réservez le menu qui vous convient</h2>
                     <h4>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h4>
-                    <button class="mainButton">Explorer nos restaurants</button>
+                    <a href="#lienRestaurants" class="mainButton">Explorer nos restaurants</a>
                 </nav>
                 <section class="howItWork">
                     <h2>Fonctionnement</h2>
@@ -59,27 +60,27 @@
                             <span>1</span>
                         </div>
                         <i class="fa-solid fa-mobile-screen-button"></i>
-                        <p>Choisissez un restaurant</p>
+                        <h4>Choisissez un restaurant</h4>
                     </article>
                     <article class="littleCard">
                         <div class="numberList">
                             <span>2</span>
                         </div>
                         <i class="fa-solid fa-list-ul"></i>
-                        <p>Composez votre menu</p>
+                        <h4>Composez votre menu</h4>
                     </article>
                     <article class="littleCard">
                         <div class="numberList">
                             <span>3</span>
                         </div>
                         <i class="fa-solid fa-store"></i>
-                        <p>Dégustez au restaurant</p>
+                        <h4>Dégustez au restaurant</h4>
                     </article>
                 </section>
                 <section class="homeRestaurants">
-                    <h2>Restaurants</h2>
-                    <a href="#">
-                        <article class="restaurantCard">
+                    <h2 id="lienRestaurants">Restaurants</h2>
+                    <article class="restaurantCard">
+                        <a href="#">
                             <div class="newTag">Nouveau</div>
                             <img class="homeImg"
                                 src="imgAndTextOhMyFood/img/restaurants/jayWenningtonNY88TWmGwAUnsplash.jpg"
@@ -89,13 +90,13 @@
                                     <h3>La palette du goût</h3>
                                     <p>Ménilmontent</p>
                                 </div>
-                                <input type="checkbox" id="laPaletteDuGout" class="likeCheckbox">
-                                <label for="laPaletteDuGout"></label>
                             </div>
-                        </article>
-                    </a>
-                    <a href="#">
-                        <article class="restaurantCard">
+                        </a>
+                        <input type="checkbox" id="laPaletteDuGout" class="likeCheckbox">
+                        <label for="laPaletteDuGout"></label>
+                    </article>
+                    <article class="restaurantCard">
+                        <a href="#">
                             <div class="newTag">Nouveau</div>
                             <img class="homeImgStilU"
                                 src="imgAndTextOhMyFood/img/restaurants/stilU2Lp8tXIcjwUnsplash.jpg"
@@ -105,13 +106,13 @@
                                     <h3>La note enchantée</h3>
                                     <p>Charonne</p>
                                 </div>
-                                <input type="checkbox" id="laNoteEnchantee" class="likeCheckbox">
-                                <label for="laNoteEnchantee"></label>
                             </div>
-                        </article>
-                    </a>
-                    <a href="#">
-                        <article class="restaurantCard">
+                        </a>
+                        <input type="checkbox" id="laNoteEnchantee" class="likeCheckbox">
+                        <label for="laNoteEnchantee"></label>
+                    </article>
+                    <article class="restaurantCard">
+                        <a href="#">
                             <img class="homeImg"
                                 src="imgAndTextOhMyFood/img/restaurants/toaHeftibaDQKerTsQwi0Unsplash.jpg"
                                 alt="picture of a plate from À la française restaurant">
@@ -120,12 +121,11 @@
                                     <h3>À la française</h3>
                                     <p>Cité Rouge</p>
                                 </div>
-                                <input type="checkbox" id="aLaFrancaise" class="likeCheckbox">
-                                <label for="aLaFrancaise"></label>
                             </div>
-                        </article>
-                    </a>
-
+                        </a>
+                        <input type="checkbox" id="aLaFrancaise" class="likeCheckbox">
+                        <label for="aLaFrancaise"></label>
+                    </article>
                     <article class="restaurantCard">
                         <a href="#">
                             <img class="homeImg"

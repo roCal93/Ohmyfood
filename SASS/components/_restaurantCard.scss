@@ -4,23 +4,26 @@
     background-color: $homeRestaurantBackground;
     border-radius: 15px;
     display: flex;
+    flex-direction: column;
     position: relative;
 }
 
 .homeImg {
-    height: 176px;
-    object-fit:cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    object-position: 0px -50px;
-}
-
-.homeImgStilU {
+    width: 100%;
     height: 176px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    object-position: 0px -152px;
+    object-position: bottom;  
+}
+
+.homeImgStilU {
+    width: 100%;
+    height: 176px;
+    object-fit:cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-position: 50% 60%;
 }
 
 .cardContent{
@@ -28,7 +31,6 @@
     padding: 13px;
     display: flex;
     justify-content: space-between;
-    position: relative;
 }
 
 .cardTxt {

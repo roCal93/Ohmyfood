@@ -2,28 +2,25 @@
   display: none;
 }
 
-.likeCheckbox + label {
+.likeCheckbox+label {
   position: absolute;
   cursor: pointer;
-  top: 18px;
+  bottom: 30px;
   right: 22px;
 }
 
-.likeCheckbox + label:before {
+.likeCheckbox+label::before {
   content: "\f08a";
   font-family: FontAwesome;
   font-size: 25px;
   padding: 2px;
+  transition: 400ms ease;
 }
 
-.likeCheckbox:checked + label:before {
+.likeCheckbox:checked+label::before {
   content: "\f004";
   font-size: 25px;
   background: linear-gradient(to bottom, $primary, $secondary);
   background-clip: text;
   color: transparent;
 }
-
-
-
-
