@@ -123,7 +123,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 .howItWork {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 50px 20px 70px 20px;
   display: flex;
   flex-direction: column;
@@ -181,32 +181,16 @@ footer {
   font-size: 13px;
 }
 
-.loaderContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.loadingLetters {
   width: 100%;
   height: 100%;
-  position: relative;
-}
-
-.loaderContainer::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 10001;
-  background: white;
-  opacity: 0.6;
-  animation: displayNone 3000ms 5000ms both;
-}
-
-.flippingLetters {
-  z-index: 10002;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 2;
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   position: absolute;
-  top: 15%;
-  animation: displayNone 3000ms 5000ms both;
+  animation: fadeOut 3s 3s forwards;
 }
 
 .letter {
@@ -215,7 +199,9 @@ footer {
   font-size: 50px;
   font-weight: 100;
   backface-visibility: hidden;
-  animation: flip 3s 2;
+  animation: flip 3s;
+  position: relative;
+  top: 15%;
 }
 
 .letter:nth-child(1) {
@@ -258,7 +244,7 @@ footer {
     transform: rotateX(180deg);
   }
 }
-@keyframes displayNone {
+@keyframes fadeOut {
   100% {
     display: none;
     opacity: 0;
@@ -431,7 +417,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
   position: absolute;
   left: -12px;
 }
@@ -485,6 +471,7 @@ footer {
   width: 100%;
   max-width: 480px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .menuMainConteneur {
