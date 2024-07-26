@@ -7,10 +7,11 @@ h1,h2,h3,h4,p {
   padding: 0;
 }
 
-p {
-  font-family: $fontText;
-  font-weight: 400;
-  font-size: 16px;
+h1 {
+  font-family: $fontTitleLogo;
+  font-weight: 300;
+  font-size: 28px;
+  font-style: italic;
 }
 
 h2 {
@@ -33,6 +34,12 @@ h4 {
   font-size: 18px;
 }
 
+p {
+  font-family: $fontText;
+  font-weight: 400;
+  font-size: 16px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -47,7 +54,7 @@ main {
   text-align: center;
   display: flex;
   flex-direction: column;
-  position: relative;
+  box-sizing: border-box;
 }
 
 ul {

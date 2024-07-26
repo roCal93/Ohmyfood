@@ -1,15 +1,16 @@
-.likeCheckbox {
+.likeCheckboxHome {
   display: none;
 }
 
-.likeCheckbox+label {
+.likeCheckboxHome+label {
   position: absolute;
   cursor: pointer;
   bottom: 30px;
   right: 22px;
+  height: 25px;
 }
 
-.likeCheckbox+label::before {
+.likeCheckboxHome+label::before {
   content: "\f08a";
   font-family: FontAwesome;
   font-size: 25px;
@@ -17,7 +18,7 @@
   transition: 400ms ease;
 }
 
-.likeCheckbox:checked+label::before {
+.likeCheckboxHome:checked+label::before {
   content: "\f004";
   font-size: 25px;
   background: linear-gradient(to bottom, $primary, $secondary);

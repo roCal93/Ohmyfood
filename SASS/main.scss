@@ -13,11 +13,13 @@
 
 
 @import 'components/buttons',
-'components/littleCard',
+'components/littleCardHome',
 'components/_restaurantCard',
 'components/numberList',
 'components/newTag',
-'components/likeCheckbox';
+'components/likeCheckboxHome',
+'components/likeCheckboxMenu',
+'components/littleCardMenu';
 
 
 @import 'pages/home',
