@@ -5,4 +5,30 @@
     box-shadow: $menuShadow;
     padding: 15px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    cursor: pointer;
+}
+
+.txtCardMenu {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 15px;
+        font-weight: 200;
+    }
+}
+
+.littleCardMenu h4 {
+    font-size: 15px;
+    font-weight: 600;
 }

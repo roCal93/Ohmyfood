@@ -13,7 +13,7 @@
     top: -40px;
     display: flex;
     flex-direction: column;
-    padding: 32px 17px;
+    padding: 32px 17px 0px 17px;
     box-sizing: border-box;
     gap: 28px;
 }
@@ -26,13 +26,28 @@
 .food {
     display: flex;
     flex-direction: column;
+    gap: 40px;
+
+    h2 {
+        font-size: 16px;
+        font-weight: 300;
+        border-bottom: 3px $third solid ;
+        width: 40px;
+        padding-bottom: 5px;
+    }
+}
+
+.foodType {
+    display: flex;
+    flex-direction: column;
     gap: 12px;
 }
 
-.food h2 {
-    font-size: 16px;
-    font-weight: 300;
-    border-bottom: 3px $third solid ;
-    width: 40px;
-    padding-bottom: 5px;
+.purchaseBtn{
+    display: flex;
+    justify-content: center;
+
+    .mainButton{
+        margin: 0;
+    }
 }

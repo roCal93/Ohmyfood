@@ -1,0 +1,23 @@
+
+.checkboxFood {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+}
+.checkboxFood{
+    height: 69px;
+}
+
+.checkboxFood:checked {
+    background: yellow;
+    margin:0px;
+    position: relative;
+    &:before {
+      font-family: FontAwesome;
+      content: '\f00c';
+      display: block;
+      color: grey;
+      font-size: 13px;
+      position: absolute;
+    }
+  }
