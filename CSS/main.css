@@ -553,6 +553,7 @@ footer {
   justify-content: space-between;
   align-items: flex-end;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .txtCardMenu {
@@ -600,9 +601,13 @@ footer {
   top: 15px;
   right: -15px;
   transition: width 0.7s ease;
-  object-fit: fill;
 }
 
+/*.littleCardMenu label {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}*/
 .checkboxFood:checked {
   display: flex;
   align-items: center;
@@ -615,7 +620,6 @@ footer {
   position: relative;
   top: 15px;
   right: -15px;
-  object-fit: fill;
 }
 .checkboxFood:checked::before {
   content: "";
