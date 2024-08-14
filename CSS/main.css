@@ -551,12 +551,12 @@ footer {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   cursor: pointer;
 }
 
 .txtCardMenu {
-  width: 70%;
+  min-width: 20px;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -568,7 +568,6 @@ footer {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 85%;
 }
 .txtCardMenu p {
   font-size: 15px;
@@ -576,14 +575,15 @@ footer {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 85%;
 }
 
-.littleCardMenu h4 {
-  font-size: 15px;
-  font-weight: 600;
+.priceCheck {
   display: flex;
   align-items: end;
+}
+.priceCheck h4 {
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .checkboxFood {
@@ -591,7 +591,16 @@ footer {
   -moz-appearance: none;
   -ms-appearance: none;
   width: 0px;
+  margin: 0px;
+  height: 69px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #99E2D0;
+  position: relative;
+  top: 15px;
+  right: -15px;
   transition: width 0.7s ease;
+  object-fit: fill;
 }
 
 .checkboxFood:checked {
@@ -600,10 +609,13 @@ footer {
   justify-content: center;
   height: 69px;
   width: 59px;
-  margin: 0px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background: #99E2D0;
+  position: relative;
+  top: 15px;
+  right: -15px;
+  object-fit: fill;
 }
 .checkboxFood:checked::before {
   content: "";

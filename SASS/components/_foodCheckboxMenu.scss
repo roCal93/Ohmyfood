@@ -3,7 +3,16 @@
   -moz-appearance: none;
   -ms-appearance: none;
   width: 0px;
+  margin: 0px;
+  height: 69px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: $third;
+  position: relative;
+  top: 15px;
+  right: -15px;
   transition: width 0.7s ease;
+  object-fit: fill;
 }
 
 
@@ -13,10 +22,13 @@
   justify-content: center;
   height: 69px;
   width: 59px;
-  margin: 0px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background: $third;
+  position: relative;
+  top: 15px;
+  right: -15px;
+  object-fit: fill;
 
   &::before {
     content:"";
