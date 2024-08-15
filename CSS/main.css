@@ -197,7 +197,7 @@ footer {
   justify-content: center;
   align-items: flex-start;
   position: absolute;
-  animation: fadeOut 3s 3s forwards;
+  animation: fadeOut 2s 2s forwards;
 }
 
 .letter {
