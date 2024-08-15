@@ -1,4 +1,4 @@
-.littleCardMenu {
+.littleCardMenu1 {
     width: 100%;
     height: 69px;
     padding: 15px;
@@ -12,7 +12,98 @@
     overflow: hidden;
     z-index: 2;
     position: relative;
+    animation: 1s ease both flipCard;
 }
+
+.littleCardMenu2 {
+    width: 100%;
+    height: 69px;
+    padding: 15px;
+    background-color: $littleCardBackgroundClr;
+    border-radius: 15px;
+    box-shadow: $menuShadow;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+    animation: 1s ease both flipCard;
+}
+
+.littleCardMenu3 {
+    width: 100%;
+    height: 69px;
+    padding: 15px;
+    background-color: $littleCardBackgroundClr;
+    border-radius: 15px;
+    box-shadow: $menuShadow;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+    animation: 1s ease both flipCard;
+}
+
+
+.littleCardMenu1:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.littleCardMenu1:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.littleCardMenu1:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.littleCardMenu1:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.littleCardMenu2:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.littleCardMenu2:nth-child(3) {
+    animation-delay: 1.2s;
+}
+
+.littleCardMenu2:nth-child(4) {
+    animation-delay: 1.4s;
+}
+
+.littleCardMenu2:nth-child(5) {
+    animation-delay: 1.6s;
+}
+
+.littleCardMenu3:nth-child(2) {
+    animation-delay: 1.8s;
+}
+
+.littleCardMenu3:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.littleCardMenu3:nth-child(4) {
+    animation-delay: 2.2s;
+}
+
+
+@keyframes flipCard {
+    from {
+      transform: rotateX(90deg);
+    }
+    to {
+      transform: rotateX(180deg);
+      transform: perspective(250px);
+    }
+  }
 
 .txtCardMenu {
     min-width: 20px;
