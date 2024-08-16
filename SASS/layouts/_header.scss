@@ -11,8 +11,15 @@ header{
     height: 63px;
     width: 100%;
 
+    @media (min-width: 768px) {
+        height: 96px;
+    }
+
     &__headerLogo {
-        height: 28px;
+        width: 162px;
+        @media (min-width: 768px) {
+            width: 200px;
+        }
     }
 }
 
@@ -21,6 +28,10 @@ header{
     gap: 17px;
     height: 50px;
     box-shadow: inset 0px 4px 4px -3px rgba(40, 40, 40, 0.25);
+
+    @media (min-width: 768px) {
+        box-shadow: none;
+    }
 
     .headerFormInput {
         width: 109px;

@@ -25,34 +25,35 @@
 
 <body>
     <div class="homeMainContainer">
-            <div class="loadingLetters">
-                <div class="letter">o</div>
-                <div class="letter">h</div>
-                <div class="letter">m</div>
-                <div class="letter">y</div>
-                <div class="letter">f</div>
-                <div class="letter">o</div>
-                <div class="letter">o</div>
-                <div class="letter">d</div>
+        <div class="loadingLetters">
+            <div class="letter">o</div>
+            <div class="letter">h</div>
+            <div class="letter">m</div>
+            <div class="letter">y</div>
+            <div class="letter">f</div>
+            <div class="letter">o</div>
+            <div class="letter">o</div>
+            <div class="letter">d</div>
+        </div>
+        <header>
+            <div class="header">
+                <img class="header__headerLogo" src="imgAndTextOhMyFood/img/logo/ohMyFood.png" alt="Logo Ohmyfood">
             </div>
-            <header>
-                <div class="header">
-                    <img class="header__headerLogo" src="imgAndTextOhMyFood/img/logo/ohMyFood.png" alt="Logo Ohmyfood">
-                </div>
-                <form class="header headerForm" action="#" method="post" autocomplete="off">
-                    <label for="ville"><i class="fa-solid fa-location-dot"></i></label>
-                    <input class="headerFormInput" type="search" placeholder="Paris, Belleville" name="ville" id="ville"
-                        autofocus required>
-                </form>
-            </header>
-            <main>
-                <nav class="explore">
-                    <h2>Réservez le menu qui vous convient</h2>
-                    <h4>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h4>
-                    <a href="#lienRestaurants" class="mainButton">Explorer nos restaurants</a>
-                </nav>
-                <section class="howItWork">
-                    <h2>Fonctionnement</h2>
+            <form class="header headerForm" action="#" method="post" autocomplete="off">
+                <label for="ville"><i class="fa-solid fa-location-dot"></i></label>
+                <input class="headerFormInput" type="search" placeholder="Paris, Belleville" name="ville" id="ville"
+                    autofocus required>
+            </form>
+        </header>
+        <main>
+            <nav class="explore">
+                <h2>Réservez le menu qui vous convient</h2>
+                <h4>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h4>
+                <a href="#lienRestaurants" class="mainButton">Explorer nos restaurants</a>
+            </nav>
+            <section class="howItWork">
+                <h2>Fonctionnement</h2>
+                <div class="littleCardHomeBlock">
                     <article class="littleCardHome">
                         <div class="numberList">
                             <span>1</span>
@@ -74,83 +75,94 @@
                         <i class="fa-solid fa-store"></i>
                         <h4>Dégustez au restaurant</h4>
                     </article>
-                </section>
-                <section class="homeRestaurants">
-                    <h2 id="lienRestaurants">Restaurants</h2>
-                    <article class="restaurantCard">
-                        <a href="menuLaPaletteDuGout.html">
-                            <div class="newTag">Nouveau</div>
-                            <img class="homeImg"
-                                src="imgAndTextOhMyFood/img/restaurants/jayWenningtonNY88TWmGwAUnsplash.jpg"
-                                alt="picture of a plate from Jay Wennington restaurant">
-                            <div class="cardContent">
-                                <div class="cardTxt">
-                                    <h3>La palette du goût</h3>
-                                    <p>Ménilmontent</p>
+                </div>
+            </section>
+            <section class="homeRestaurants">
+                <h2 id="lienRestaurants">Restaurants</h2>
+                <div class="restaurantCardBlock">
+                    <div class="restaurantCardBlock1">
+                        <article class="restaurantCard">
+                            <a href="menuLaPaletteDuGout.html">
+                                <div class="newTag">Nouveau</div>
+                                <img class="homeImg"
+                                    src="imgAndTextOhMyFood/img/restaurants/jayWenningtonNY88TWmGwAUnsplash.jpg"
+                                    alt="picture of a plate from Jay Wennington restaurant">
+                                <div class="cardContent">
+                                    <div class="cardTxt">
+                                        <h3>La palette du goût</h3>
+                                        <p>Ménilmontent</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <input type="checkbox" id="laPaletteDuGout" class="likeCheckboxHome">
-                        <label for="laPaletteDuGout"></label>
-                    </article>
-                    <article class="restaurantCard">
-                        <a href="menuLaNoteEnchantée.html">
-                            <div class="newTag">Nouveau</div>
-                            <img class="homeImgStilU"
-                                src="imgAndTextOhMyFood/img/restaurants/stilU2Lp8tXIcjwUnsplash.jpg"
-                                alt="picture of a plate from La note enchantée restaurant">
-                            <div class="cardContent">
-                                <div class="cardTxt">
-                                    <h3>La note enchantée</h3>
-                                    <p>Charonne</p>
+                            </a>
+                            <input type="checkbox" id="laPaletteDuGout" class="likeCheckboxHome">
+                            <label for="laPaletteDuGout"></label>
+                        </article>
+                        <article class="restaurantCard">
+                            <a href="menuLaNoteEnchantée.html">
+                                <div class="newTag">Nouveau</div>
+                                <img class="homeImgStilU"
+                                    src="imgAndTextOhMyFood/img/restaurants/stilU2Lp8tXIcjwUnsplash.jpg"
+                                    alt="picture of a plate from La note enchantée restaurant">
+                                <div class="cardContent">
+                                    <div class="cardTxt">
+                                        <h3>La note enchantée</h3>
+                                        <p>Charonne</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <input type="checkbox" id="laNoteEnchantee" class="likeCheckboxHome">
-                        <label for="laNoteEnchantee"></label>
-                    </article>
-                    <article class="restaurantCard">
-                        <a href="menuALaFrançaise.html">
-                            <img class="homeImg"
-                                src="imgAndTextOhMyFood/img/restaurants/toaHeftibaDQKerTsQwi0Unsplash.jpg"
-                                alt="picture of a plate from À la française restaurant">
-                            <div class="cardContent">
-                                <div class="cardTxt">
-                                    <h3>À la française</h3>
-                                    <p>Cité Rouge</p>
+                            </a>
+                            <input type="checkbox" id="laNoteEnchantee" class="likeCheckboxHome">
+                            <label for="laNoteEnchantee"></label>
+                        </article>
+                    </div>
+                    <div class="restaurantCardBlock2">
+                        <article class="restaurantCard">
+                            <a href="menuALaFrançaise.html">
+                                <img class="homeImg"
+                                    src="imgAndTextOhMyFood/img/restaurants/toaHeftibaDQKerTsQwi0Unsplash.jpg"
+                                    alt="picture of a plate from À la française restaurant">
+                                <div class="cardContent">
+                                    <div class="cardTxt">
+                                        <h3>À la française</h3>
+                                        <p>Cité Rouge</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <input type="checkbox" id="aLaFrancaise" class="likeCheckboxHome">
-                        <label for="aLaFrancaise"></label>
-                    </article>
-                    <article class="restaurantCard">
-                        <a href="menuLeDéliceDesSens.html">
-                            <img class="homeImg"
-                                src="imgAndTextOhMyFood/img/restaurants/louisHanselShotsoflouisQNBGVyOCY8QUnsplash.jpg"
-                                alt="picture of a plate from Le délice des sens restaurant">
-                            <div class="cardContent">
-                                <div class="cardTxt">
-                                    <h3>Le délice des sens</h3>
-                                    <p>Folie-Méricourt</p>
+                            </a>
+                            <input type="checkbox" id="aLaFrancaise" class="likeCheckboxHome">
+                            <label for="aLaFrancaise"></label>
+                        </article>
+                        <article class="restaurantCard">
+                            <a href="menuLeDéliceDesSens.html">
+                                <img class="homeImg"
+                                    src="imgAndTextOhMyFood/img/restaurants/louisHanselShotsoflouisQNBGVyOCY8QUnsplash.jpg"
+                                    alt="picture of a plate from Le délice des sens restaurant">
+                                <div class="cardContent">
+                                    <div class="cardTxt">
+                                        <h3>Le délice des sens</h3>
+                                        <p>Folie-Méricourt</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <input type="checkbox" id="leDeliceDesSens" class="likeCheckboxHome">
-                        <label for="leDeliceDesSens"></label>
-                    </article>
-                </section>
-            </main>
-            <footer>
-                <h4 class="titleFooter">ohmyfood</h4>
-                <ul class="footerMenu">
+                            </a>
+                            <input type="checkbox" id="leDeliceDesSens" class="likeCheckboxHome">
+                            <label for="leDeliceDesSens"></label>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h4 class="titleFooter">ohmyfood</h4>
+            <ul class="footerMenu">
+                <div class="footerMenu1">
                     <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
                     <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                </div>
+                <div class="footerMenu2">
                     <li><a href="#">Mentions légales</a></li>
                     <li><a href="mailto:ohmyfood@gmail.com">Contact</a></li>
-                </ul>
-            </footer>
-        </div>
+                </div>
+            </ul>
+        </footer>
+    </div>
     </div>
 </body>
 

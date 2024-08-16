@@ -75,8 +75,18 @@ header {
   height: 63px;
   width: 100%;
 }
+@media (min-width: 768px) {
+  .header {
+    height: 96px;
+  }
+}
 .header__headerLogo {
-  height: 28px;
+  width: 162px;
+}
+@media (min-width: 768px) {
+  .header__headerLogo {
+    width: 200px;
+  }
 }
 
 .headerForm {
@@ -84,6 +94,11 @@ header {
   gap: 17px;
   height: 50px;
   box-shadow: inset 0px 4px 4px -3px rgba(40, 40, 40, 0.25);
+}
+@media (min-width: 768px) {
+  .headerForm {
+    box-shadow: none;
+  }
 }
 .headerForm .headerFormInput {
   width: 109px;
@@ -123,10 +138,23 @@ input[type=search]::-webkit-search-results-decoration {
   padding: 40px 0px;
   gap: 10px;
 }
+@media (min-width: 768px) {
+  .explore {
+    box-shadow: none;
+    padding: 30px 0px;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
 
 .explore h2 {
   text-align: center;
   margin: 0px 45px;
+}
+@media (min-width: 768px) {
+  .explore h2 {
+    font-size: 40px;
+  }
 }
 
 .howItWork {
@@ -134,17 +162,75 @@ input[type=search]::-webkit-search-results-decoration {
   padding: 50px 20px 70px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 30px;
+}
+@media (min-width: 768px) {
+  .howItWork {
+    padding: 50px 180px;
+  }
+}
+
+.littleCardHomeBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 12px;
+}
+@media (min-width: 768px) {
+  .littleCardHomeBlock {
+    flex-direction: row;
+    gap: 35px;
+  }
 }
 
 .homeRestaurants {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 18px;
   padding: 50px 17.5px 70px 17.5px;
-  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .homeRestaurants {
+    padding: 30px 180px;
+    gap: 28px;
+  }
+}
+
+.restaurantCardBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+@media (min-width: 768px) {
+  .restaurantCardBlock {
+    gap: 50px;
+  }
+}
+
+.restaurantCardBlock1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+}
+@media (min-width: 768px) {
+  .restaurantCardBlock1 {
+    flex-direction: row;
+    gap: 100px;
+  }
+}
+
+.restaurantCardBlock2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+}
+@media (min-width: 768px) {
+  .restaurantCardBlock2 {
+    flex-direction: row;
+    gap: 100px;
+  }
 }
 
 footer {
@@ -157,6 +243,13 @@ footer {
   gap: 16px;
   box-sizing: border-box;
 }
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row-reverse;
+    align-items: end;
+    padding: 30px 25px;
+  }
+}
 
 .titleFooter {
   font-family: "Shrikhand", serif;
@@ -164,8 +257,30 @@ footer {
   color: #FFFFFF;
   font-style: italic;
 }
+@media (min-width: 768px) {
+  .titleFooter {
+    margin: 0px 40px 0px 40px;
+  }
+}
 
 .footerMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+@media (min-width: 768px) {
+  .footerMenu {
+    flex-direction: row;
+  }
+}
+
+.footerMenu1 {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.footerMenu2 {
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -326,6 +441,7 @@ footer {
 }
 .purchaseBtn .mainButton {
   margin: 0;
+  width: 186px;
 }
 
 .mainButton {
@@ -333,7 +449,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 58%;
+  width: 218px;
   height: 50px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -346,6 +462,11 @@ footer {
   margin: 20px 0px;
   position: relative;
   z-index: 1;
+}
+@media (min-width: 768px) {
+  .mainButton {
+    margin: 0;
+  }
 }
 .mainButton:hover::after {
   opacity: 1;
@@ -367,14 +488,16 @@ footer {
 
 .littleCardHome {
   height: 72px;
+  width: 100%;
   background-color: #f6f6f6;
   border-radius: 20px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   display: flex;
   align-items: center;
-  margin-left: 12px;
   position: relative;
   padding-left: 80px;
+  padding-right: 10px;
+  box-sizing: border-box;
 }
 
 .littleCardHome h4 {
@@ -415,6 +538,11 @@ footer {
   flex-direction: column;
   position: relative;
 }
+@media (min-width: 768px) {
+  .restaurantCard {
+    width: 100%;
+  }
+}
 
 .homeImg {
   width: 100%;
@@ -423,6 +551,11 @@ footer {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   object-position: bottom;
+}
+@media (min-width: 768px) {
+  .homeImg {
+    object-position: 50% 70%;
+  }
 }
 
 .homeImgStilU {
@@ -762,7 +895,11 @@ footer {
   width: 100%;
   max-width: 480px;
   box-sizing: border-box;
-  position: relative;
+}
+@media (min-width: 768px) {
+  .homeMainContainer {
+    max-width: 1920px;
+  }
 }
 
 .menuMainConteneur {

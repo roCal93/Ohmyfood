@@ -1,14 +1,16 @@
 // little card in howItWork
 .littleCardHome {
     height: 72px;
+    width: 100%;
     background-color: $littleCardBackgroundClr;
     border-radius: 20px;
     box-shadow: $homeShadow;
     display: flex;
     align-items: center;
-    margin-left: 12px;
     position: relative;
     padding-left: 80px;
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 
 .littleCardHome h4 {
