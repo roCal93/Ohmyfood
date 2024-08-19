@@ -19,7 +19,12 @@
     backface-visibility: hidden;
     animation: flip 3s;
     position: relative;
-    top: 15%;
+    top: 40%;
+    
+    @media (min-width: $desktop) {
+        font-size: 100px;
+        top: 45%;
+    }
     
 }
 

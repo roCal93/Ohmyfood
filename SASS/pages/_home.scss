@@ -1,10 +1,11 @@
 .homeMainContainer {
     width: 100%;
-    max-width: 480px;
+   
     box-sizing: border-box;
 
-    @media (min-width: 768px) {
+    @media (min-width: $desktop) {
         max-width: 1920px;
     }
+
 }
 

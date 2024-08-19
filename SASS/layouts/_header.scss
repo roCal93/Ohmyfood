@@ -11,13 +11,14 @@ header{
     height: 63px;
     width: 100%;
 
-    @media (min-width: 768px) {
+    @media (min-width: $desktop), (min-width: $tablet) {
         height: 96px;
     }
 
+
     &__headerLogo {
         width: 162px;
-        @media (min-width: 768px) {
+        @media (min-width: $desktop), (min-width: $tablet) {
             width: 200px;
         }
     }
@@ -29,7 +30,7 @@ header{
     height: 50px;
     box-shadow: inset 0px 4px 4px -3px rgba(40, 40, 40, 0.25);
 
-    @media (min-width: 768px) {
+    @media (min-width: $desktop) {
         box-shadow: none;
     }
 
