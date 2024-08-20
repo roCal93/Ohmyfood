@@ -14,7 +14,7 @@
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-
+    
     @media (min-width: $desktop) {
         object-position: 50% 65%;
     }
@@ -34,6 +34,7 @@
     padding: 13px;
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .cardTxt {
