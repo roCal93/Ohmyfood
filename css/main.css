@@ -912,20 +912,10 @@ footer {
   position: relative;
   box-sizing: border-box;
 }
-@media (min-width: 1024px) {
-  .homeMainContainer {
-    max-width: 1920px;
-  }
-}
 
 .menuMainConteneur {
   width: 100%;
   box-sizing: border-box;
-}
-@media (min-width: 1024px) {
-  .menuMainConteneur {
-    max-width: 1920px;
-  }
 }
 
 .menuMainConteneur main {
