@@ -1,0 +1,28 @@
+
+.menuHeader{
+    display: flex;
+    align-items: center;
+    height: 63px;
+    width: 100%;
+    justify-content: center;
+
+    @media (min-width: $desktop) {
+        height: 96px;
+    }
+
+    &__headerLogo {
+        height: 28px;
+    }
+}
+
+.fa-arrow-left {
+    font-size: 22px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+
+    @media (min-width: $desktop) {
+        top: 35px;
+        left: 25px;
+    }
+}

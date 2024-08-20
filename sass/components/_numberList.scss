@@ -1,0 +1,15 @@
+.numberList {
+    font-family: $fontText;
+    font-size: 14px;
+    font-weight: 400;
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $howItWorkBackgroundClr;
+    position: absolute;
+    left: -12px;
+}

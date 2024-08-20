@@ -1,0 +1,27 @@
+.likeCheckboxHome {
+  display: none;
+}
+
+.likeCheckboxHome+label {
+  position: absolute;
+  cursor: pointer;
+  bottom: 30px;
+  right: 22px;
+  height: 25px;
+}
+
+.likeCheckboxHome+label::before {
+  content: "\f08a";
+  font-family: FontAwesome;
+  font-size: 25px;
+  padding: 2px;
+  transition: 400ms ease;
+}
+
+.likeCheckboxHome:checked+label::before {
+  content: "\f004";
+  font-size: 25px;
+  background: linear-gradient(to bottom, $primary, $secondary);
+  background-clip: text;
+  color: transparent;
+}

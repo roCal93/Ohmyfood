@@ -1,0 +1,49 @@
+.restaurantCard{
+    height: 251px;
+    width: 100%;
+    background-color: $homeRestaurantBackground;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.homeImg {
+    width: 100%;
+    height: 176px;
+    object-fit:cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-position: bottom;  
+
+    @media (min-width: $desktop) {
+        object-position: 50% 70%;
+     }
+}
+
+.homeImgStilU {
+    width: 100%;
+    height: 176px;
+    object-fit:cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-position: 50% 60%;
+}
+
+.cardContent{
+    height: 75px;
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardTxt {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+    p {
+        font-size: 17px;
+        font-weight: 300;
+    }
+}
