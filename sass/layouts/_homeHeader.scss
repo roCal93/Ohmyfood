@@ -36,26 +36,28 @@ header {
     (min-width: $desktop) {
         box-shadow: none;
     }
-
-    .headerFormInput {
-        width: 109px;
-        border: none;
-        background-color: $formColor;
-        padding: 0;
-        font-size: 16px;
-        font-weight: 500;
-        font-family: "Roboto", sans-serif;
-
-        .headerFormInput::placeholder {
-            font-size: 16px;
-            font-weight: 400;
-            font-family: "Roboto", sans-serif;
-            color: black;
-        }
-    }
 }
 
+.headerFormInput {
+    width: 109px;
+    border: none;
+    background-color: $formColor;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
 
+.headerFormInput:focus {
+    outline: none;
+}
+
+.headerFormInput::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
 
 /*Chrome cross form*/
 input[type="search"]::-webkit-search-decoration,
