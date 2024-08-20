@@ -114,10 +114,6 @@ header {
   color: black;
 }
 
-.headerFormInput:focus {
-  outline: none;
-}
-
 /*Chrome cross form*/
 input[type=search]::-webkit-search-decoration,
 input[type=search]::-webkit-search-cancel-button,
