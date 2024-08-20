@@ -1,24 +1,26 @@
-header{
+header {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.header {
+.logoBanner {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 63px;
     width: 100%;
 
-    @media (min-width: $desktop), (min-width: $tablet) {
+    @media (min-width: $tablet),
+    (min-width: $desktop) {
         height: 96px;
     }
 
-
     &__headerLogo {
         width: 162px;
-        @media (min-width: $desktop), (min-width: $tablet) {
+
+        @media (min-width: $tablet),
+        (min-width: $desktop) {
             width: 200px;
         }
     }
@@ -30,7 +32,8 @@ header{
     height: 50px;
     box-shadow: inset 0px 4px 4px -3px rgba(40, 40, 40, 0.25);
 
-    @media (min-width: $desktop) {
+    @media (min-width: $tablet),
+    (min-width: $desktop) {
         box-shadow: none;
     }
 
@@ -42,18 +45,18 @@ header{
         font-size: 16px;
         font-weight: 500;
         font-family: "Roboto", sans-serif;
+
+        .headerFormInput:focus {
+            outline: none;
+        }
+
+        .headerFormInput::placeholder {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: "Roboto", sans-serif;
+            color: black;
+        }
     }
-}
-
-.headerFormInput:focus {
-    outline: none;
-}
-
-.headerFormInput::placeholder {
-    font-size: 16px;
-    font-weight: 400;
-    font-family: "Roboto", sans-serif;
-    color: black;
 }
 
 /*Chrome cross form*/

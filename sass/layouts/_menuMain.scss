@@ -3,7 +3,8 @@
     height: 275px;
     object-fit: cover;
 
-    @media (min-width: $desktop), (min-width: $tablet) {
+    @media (min-width: $tablet),
+    (min-width: $desktop) {
         height: 383px;
         object-position: 50% 60%;
     }
@@ -18,9 +19,10 @@
     top: -55px;
     display: flex;
     flex-direction: column;
-    padding: 32px 17px 0px 17px;
+    padding: 32px 17px 40px 17px;
     box-sizing: border-box;
     gap: 28px;
+    margin-bottom: -55px;
 
     @media (min-width: $tablet) {
         width: 90%;
@@ -32,6 +34,7 @@
         padding-bottom: 40px;
         margin-bottom: -40px;
     }
+
     @media (min-width: $desktop) {
         width: 73%;
         left: 13.5%;
@@ -46,13 +49,16 @@
 
 .titleRestaurant {
     display: flex;
-    justify-content: start;
+    justify-content: left;
     gap: 32px;
     width: 100%;
-    @media (min-width: $desktop), (min-width: $tablet) {
-       justify-content: center;
+
+    @media (min-width: $tablet),
+    (min-width: $desktop) {
+        justify-content: center;
     }
 }
+
 .food {
     display: flex;
     flex-direction: column;
@@ -60,16 +66,16 @@
 
     @media (min-width: $tablet) {
         width: 90%;
-     }
-     
+    }
+
     @media (min-width: $desktop) {
         width: 62%;
-     }
+    }
 
     h2 {
         font-size: 16px;
         font-weight: 300;
-        border-bottom: 3px $third solid ;
+        border-bottom: 3px $third solid;
         width: 40px;
         padding-bottom: 5px;
     }
@@ -81,11 +87,11 @@
     gap: 12px;
 }
 
-.purchaseBtn{
+.purchaseBtn {
     display: flex;
     justify-content: center;
 
-    .mainButton{
+    .mainButton {
         margin: 0;
         width: 186px;
     }

@@ -1,4 +1,3 @@
-
 .loadingLetters {
     width: 100%;
     height: 100%;
@@ -19,20 +18,17 @@
     backface-visibility: hidden;
     animation: flip 3s;
     position: relative;
-    top: 40%;
+    top: 15%;
 
     @media (min-width: $tablet) {
         font-size: 75px;
-        top: 45%;
+        top: 20%;
     }
+
     @media (min-width: $desktop) {
         font-size: 100px;
-        top: 45%;
-    }  
-}
-
-.letter:nth-child(1) {
-    animation-delay: 0s;
+        top: 25%;
+    }
 }
 
 .letter:nth-child(2) {
@@ -67,6 +63,7 @@
     100% {
         transform: rotateX(0deg);
     }
+
     50% {
         transform: rotateX(180deg);
     }

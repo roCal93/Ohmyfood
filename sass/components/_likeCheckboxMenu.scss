@@ -1,26 +1,26 @@
 .likeCheckboxMenu {
-    display: none;
-  }
-  
-  .likeCheckboxMenu+label {
-    display: flex;
-    cursor: pointer;
-    margin-top: 4px;
-    height: 25px;
-  }
-  
-  .likeCheckboxMenu+label::before {
-    content: "\f08a";
-    font-family: FontAwesome;
-    font-size: 25px;
-    padding: 1px;
-    transition: 400ms ease;
-  }
-  
-  .likeCheckboxMenu:checked+label::before {
-    content: "\f004";
-    font-size: 25px;
-    background: linear-gradient(to bottom, $primary, $secondary);
-    background-clip: text;
-    color: transparent;
-  }
+  display: none;
+}
+
+.likeCheckboxMenu+label {
+  display: flex;
+  cursor: pointer;
+  margin-top: 4px;
+  height: 25px;
+}
+
+.likeCheckboxMenu+label::before {
+  content: "\f08a";
+  font-family: FontAwesome;
+  font-size: 25px;
+  padding: 1px;
+  transition: 400ms ease;
+}
+
+.likeCheckboxMenu:checked+label::before {
+  content: "\f004";
+  font-size: 25px;
+  background: linear-gradient(to bottom, $primary, $secondary);
+  background-clip: text;
+  color: transparent;
+}
