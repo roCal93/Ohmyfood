@@ -212,7 +212,7 @@ input[type=search]::-webkit-search-results-decoration {
   flex-direction: column;
   gap: 18px;
 }
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .restaurantsList {
     gap: 30px;
   }
@@ -230,7 +230,7 @@ input[type=search]::-webkit-search-results-decoration {
   justify-content: space-between;
   gap: 18px;
 }
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .restaurantCardBlock1,
   .restaurantCardBlock2 {
     flex-direction: row;

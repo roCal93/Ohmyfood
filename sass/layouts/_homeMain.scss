@@ -79,7 +79,7 @@
    flex-direction: column;
    gap: 18px;
 
-   @media (min-width: 600px) {
+   @media (min-width: 650px) {
       gap: 30px;
    }
 
@@ -96,7 +96,7 @@
    justify-content: space-between;
    gap: 18px;
 
-   @media (min-width: 600px) {
+   @media (min-width: 650px) {
       flex-direction: row;
       gap: 50px;
    }
