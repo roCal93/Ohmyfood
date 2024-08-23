@@ -398,11 +398,11 @@ footer {
     height: 96px;
   }
 }
-.menuHeader__headerLogo {
+.menuHeader .headerLogo {
   width: 162px;
 }
 @media (min-width: 481px), (min-width: 1024px) {
-  .menuHeader__headerLogo {
+  .menuHeader .headerLogo {
     width: 200px;
   }
 }
