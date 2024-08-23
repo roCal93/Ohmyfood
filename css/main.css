@@ -63,9 +63,9 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
+  justify-content: center;
 }
-
-.logoBanner {
+header .logoBanner {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,32 +73,33 @@ header {
   width: 100%;
 }
 @media (min-width: 481px), (min-width: 1024px) {
-  .logoBanner {
+  header .logoBanner {
     height: 96px;
   }
 }
-.logoBanner__headerLogo {
+header .logoBanner .headerLogo {
   width: 162px;
 }
 @media (min-width: 481px), (min-width: 1024px) {
-  .logoBanner__headerLogo {
+  header .logoBanner .headerLogo {
     width: 200px;
   }
 }
-
-.headerForm {
+header .headerForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #eaeaea;
   gap: 17px;
   height: 50px;
   box-shadow: inset 0px 4px 4px -3px rgba(40, 40, 40, 0.25);
 }
 @media (min-width: 481px), (min-width: 1024px) {
-  .headerForm {
+  header .headerForm {
     box-shadow: none;
   }
 }
-
-.headerFormInput {
+header .headerForm .headerFormInput {
   width: 109px;
   border: none;
   background-color: #eaeaea;
@@ -107,12 +108,10 @@ header {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
 }
-
-.headerFormInput:focus {
+header .headerForm .headerFormInput:focus {
   outline: none;
 }
-
-.headerFormInput::placeholder {
+header .headerForm .headerFormInput::placeholder {
   font-size: 16px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;

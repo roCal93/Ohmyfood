@@ -1,7 +1,0 @@
-Lien de mon repository GitHub :
-
-https://github.com/roCal93/ohMyFood.git
-
-Lien de la version en ligne :
-
-https://rocal93.github.io/ohMyFood/

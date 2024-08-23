@@ -2,62 +2,69 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-}
-
-.logoBanner {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    height: 63px;
-    width: 100%;
 
-    @media (min-width: $tablet),
-    (min-width: $desktop) {
-        height: 96px;
-    }
-
-    &__headerLogo {
-        width: 162px;
+    .logoBanner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 63px;
+        width: 100%;
 
         @media (min-width: $tablet),
         (min-width: $desktop) {
-            width: 200px;
+            height: 96px;
+        }
+
+        .headerLogo {
+            width: 162px;
+
+            @media (min-width: $tablet),
+            (min-width: $desktop) {
+                width: 200px;
+            }
+        }
+    }
+
+    .headerForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $formColor;
+        gap: 17px;
+        height: 50px;
+        box-shadow: inset 0px 4px 4px -3px rgba(40, 40, 40, 0.25);
+
+        @media (min-width: $tablet),
+        (min-width: $desktop) {
+            box-shadow: none;
+        }
+
+        .headerFormInput {
+            width: 109px;
+            border: none;
+            background-color: $formColor;
+            padding: 0;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .headerFormInput:focus {
+            outline: none;
+        }
+
+        .headerFormInput::placeholder {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: "Roboto", sans-serif;
+            color: black;
         }
     }
 }
 
-.headerForm {
-    background-color: $formColor;
-    gap: 17px;
-    height: 50px;
-    box-shadow: inset 0px 4px 4px -3px rgba(40, 40, 40, 0.25);
 
-    @media (min-width: $tablet),
-    (min-width: $desktop) {
-        box-shadow: none;
-    }
-}
 
-.headerFormInput {
-    width: 109px;
-    border: none;
-    background-color: $formColor;
-    padding: 0;
-    font-size: 16px;
-    font-weight: 400;
-    font-family: "Roboto", sans-serif;
-}
-
-.headerFormInput:focus {
-    outline: none;
-}
-
-.headerFormInput::placeholder {
-    font-size: 16px;
-    font-weight: 400;
-    font-family: "Roboto", sans-serif;
-    color: black;
-}
 
 /*Chrome cross form*/
 input[type="search"]::-webkit-search-decoration,
